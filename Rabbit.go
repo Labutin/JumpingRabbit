@@ -11,7 +11,7 @@ func solve(path string, N int, K int) {
 		for i := 1; i <= K && i <= N; i++ {
 			newPath := path
 			if path != "" {
-				newPath += "+"
+				newPath += " + "
 			}
 			newPath += strconv.Itoa(i)
 			solve(newPath, N - i, K)
