@@ -22,9 +22,9 @@ func solve(path string, N int, K int) {
 }
 
 func main() {
-	flagN := flag.Int("N", 1, "N")
-	flagK := flag.Int("K", 1, "K")
+	N := flag.Int("N", 1, "N")
+	K := flag.Int("K", 1, "K")
 	flag.Parse()
 
-	solve("", *flagN, *flagK);
+	solve("", *N, *K);
 }
